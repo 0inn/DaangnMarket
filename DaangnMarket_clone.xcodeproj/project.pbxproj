@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A9022E1A27C1F8C400E01F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E1927C1F8C400E01F1D /* AppDelegate.swift */; };
 		A9022E1C27C1F8C400E01F1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E1B27C1F8C400E01F1D /* SceneDelegate.swift */; };
-		A9022E1E27C1F8C400E01F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E1D27C1F8C400E01F1D /* ViewController.swift */; };
+		A9022E1E27C1F8C400E01F1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E1D27C1F8C400E01F1D /* HomeViewController.swift */; };
 		A9022E2127C1F8C400E01F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9022E1F27C1F8C400E01F1D /* Main.storyboard */; };
 		A9022E2327C1F8C400E01F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9022E2227C1F8C400E01F1D /* Assets.xcassets */; };
 		A9022E2627C1F8C400E01F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9022E2427C1F8C400E01F1D /* LaunchScreen.storyboard */; };
+		A9022E2E27C219A900E01F1D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E2D27C219A900E01F1D /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9022E1627C1F8C400E01F1D /* DaangnMarket_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaangnMarket_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9022E1927C1F8C400E01F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9022E1B27C1F8C400E01F1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9022E1D27C1F8C400E01F1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9022E1D27C1F8C400E01F1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A9022E2027C1F8C400E01F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9022E2227C1F8C400E01F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9022E2527C1F8C400E01F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9022E2727C1F8C400E01F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9022E2D27C219A900E01F1D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				A9022E1927C1F8C400E01F1D /* AppDelegate.swift */,
 				A9022E1B27C1F8C400E01F1D /* SceneDelegate.swift */,
-				A9022E1D27C1F8C400E01F1D /* ViewController.swift */,
+				A9022E1D27C1F8C400E01F1D /* HomeViewController.swift */,
 				A9022E1F27C1F8C400E01F1D /* Main.storyboard */,
+				A9022E2D27C219A900E01F1D /* Home.swift */,
 				A9022E2227C1F8C400E01F1D /* Assets.xcassets */,
 				A9022E2427C1F8C400E01F1D /* LaunchScreen.storyboard */,
 				A9022E2727C1F8C400E01F1D /* Info.plist */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9022E1E27C1F8C400E01F1D /* ViewController.swift in Sources */,
+				A9022E1E27C1F8C400E01F1D /* HomeViewController.swift in Sources */,
 				A9022E1A27C1F8C400E01F1D /* AppDelegate.swift in Sources */,
+				A9022E2E27C219A900E01F1D /* Home.swift in Sources */,
 				A9022E1C27C1F8C400E01F1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
