@@ -11,7 +11,6 @@ class DongneTableViewCell: UITableViewCell {
     static let identifier = "DongneTableViewCell"
     
     @IBOutlet weak var keywordBtn: UIButton!
-    @IBOutlet weak var startLabel: UILabel!
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var location: UILabel!
@@ -30,13 +29,12 @@ class DongneTableViewCell: UITableViewCell {
         keywordBtn.titleLabel?.text = data.keyword
         switch data.keyword {
         case "동네질문":
-            startLabel.text = "Q."
+            content.text = "Q. " + data.content
         case "분실/실종센터":
-            startLabel.text = "찾아요"
+            content.text = "찾아요 " + data.content
         default:
-            startLabel.text = ""
+            content.text = data.content
         }
-        content.text = data.content
         name.text = data.name
         location.text = data.location
     }

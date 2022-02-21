@@ -86,12 +86,12 @@
 			children = (
 				A9022E1927C1F8C400E01F1D /* AppDelegate.swift */,
 				A9022E1B27C1F8C400E01F1D /* SceneDelegate.swift */,
+				A9022E1F27C1F8C400E01F1D /* Main.storyboard */,
 				A9022E3127C222E800E01F1D /* Entity */,
 				A9022E3227C222FA00E01F1D /* TableViewModel */,
 				A9022E4E27C23EB900E01F1D /* Home */,
 				A9022E4F27C23EC500E01F1D /* Dongne */,
 				A9022E3327C224C300E01F1D /* png */,
-				A9022E1F27C1F8C400E01F1D /* Main.storyboard */,
 				A9022E2227C1F8C400E01F1D /* Assets.xcassets */,
 				A9022E2427C1F8C400E01F1D /* LaunchScreen.storyboard */,
 				A9022E2727C1F8C400E01F1D /* Info.plist */,
