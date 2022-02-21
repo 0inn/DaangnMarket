@@ -15,6 +15,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jpg-XH-Z6h" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pDW-8E-wtx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,11 +66,28 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5I-YR-xwN">
+                                <rect key="frame" x="322" y="731.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zul-IE-Ef9"/>
+                                    <constraint firstAttribute="width" constant="60" id="fq6-GO-Sss"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" cornerRadius="100">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QS6-dp-CJc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SzL-cm-dc7" firstAttribute="top" secondItem="QS6-dp-CJc" secondAttribute="top" id="2jt-dj-RZB"/>
+                            <constraint firstItem="A5I-YR-xwN" firstAttribute="centerY" secondItem="iDP-DT-weZ" secondAttribute="centerY" multiplier="1.7" id="3kE-bq-ege"/>
+                            <constraint firstItem="A5I-YR-xwN" firstAttribute="centerX" secondItem="iDP-DT-weZ" secondAttribute="centerX" multiplier="1.7" id="Lp8-s6-3Br"/>
                             <constraint firstItem="SzL-cm-dc7" firstAttribute="trailing" secondItem="QS6-dp-CJc" secondAttribute="trailing" id="MIH-z0-uqv"/>
                             <constraint firstItem="SzL-cm-dc7" firstAttribute="leading" secondItem="QS6-dp-CJc" secondAttribute="leading" id="XBP-oY-UmZ"/>
                             <constraint firstAttribute="bottom" secondItem="SzL-cm-dc7" secondAttribute="bottom" id="zmC-Up-ESn"/>
@@ -88,6 +106,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="plusBtn" destination="A5I-YR-xwN" id="s6A-fC-j8G"/>
+                        <outlet property="tableView" destination="SzL-cm-dc7" id="1DS-Xv-wKk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msu-LM-WUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,23 +134,68 @@
             </objects>
             <point key="canvasLocation" x="929" y="-715"/>
         </scene>
-        <!--View Controller-->
+        <!--Dongne View Controller-->
         <scene sceneID="UwY-8D-YTD">
             <objects>
-                <viewController id="8U5-ni-aft" sceneMemberID="viewController">
+                <viewController id="8U5-ni-aft" customClass="DongneViewController" customModule="DaangnMarket_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ski-fE-RgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AT6-5T-9Ls">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzE-8g-mrM">
+                                <rect key="frame" x="322" y="731.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3DQ-1M-sMY"/>
+                                    <constraint firstAttribute="width" constant="60" id="XhC-hX-Mp9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" cornerRadius="100">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VTM-Eq-UcF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rzE-8g-mrM" firstAttribute="centerY" secondItem="ski-fE-RgK" secondAttribute="centerY" multiplier="1.7" id="F6k-me-84Y"/>
+                            <constraint firstAttribute="bottom" secondItem="AT6-5T-9Ls" secondAttribute="bottom" id="L7r-cY-8tr"/>
+                            <constraint firstItem="AT6-5T-9Ls" firstAttribute="trailing" secondItem="VTM-Eq-UcF" secondAttribute="trailing" id="PuF-Ny-r66"/>
+                            <constraint firstItem="AT6-5T-9Ls" firstAttribute="top" secondItem="VTM-Eq-UcF" secondAttribute="top" id="YFd-6I-okN"/>
+                            <constraint firstItem="rzE-8g-mrM" firstAttribute="centerX" secondItem="ski-fE-RgK" secondAttribute="centerX" multiplier="1.7" id="fzc-q3-85u"/>
+                            <constraint firstItem="AT6-5T-9Ls" firstAttribute="leading" secondItem="VTM-Eq-UcF" secondAttribute="leading" id="iFx-6P-hr0"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="W5R-tJ-sQU"/>
+                    <navigationItem key="navigationItem" id="W5R-tJ-sQU">
+                        <rightBarButtonItems>
+                            <barButtonItem image="bell" catalog="system" id="wDG-jd-8Bb">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="Rns-P3-1hr">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="Pwa-IT-2cV">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="AT6-5T-9Ls" id="ryr-o5-pYL"/>
+                        <outlet property="writeBtn" destination="rzE-8g-mrM" id="6px-zg-UjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Cf-N8-zPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839" y="-715"/>
+            <point key="canvasLocation" x="1837.68115942029" y="-715.17857142857144"/>
         </scene>
         <!--내 근처-->
         <scene sceneID="yCh-yN-QIC">
@@ -250,8 +317,12 @@
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
