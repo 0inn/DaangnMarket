@@ -14,6 +14,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var cellHomeTitle: UILabel!
     @IBOutlet weak var cellHomeLocation: UILabel!
     @IBOutlet weak var cellHomePrice: UILabel!
+    @IBOutlet weak var cellHomeTime: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,12 +29,14 @@ class HomeTableViewCell: UITableViewCell {
         let name = data.title
         let location = data.location
         let price = data.price
+        let time = "· " + data.time
         
         cellHomeImageView.image = UIImage(named: imageStr + ".PNG")
         cellHomeImageView.layer.cornerRadius = 10
         cellHomeTitle.text = name
         cellHomeLocation.text = location
         cellHomePrice.text = price
+        cellHomeTime.text = time
     }
     
 }

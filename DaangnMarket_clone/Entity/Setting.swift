@@ -13,6 +13,12 @@ struct Home {
     var title: String
     var location: String
     var price: String
+    var time: String
+}
+
+struct MyDongne {
+    var first: String
+    var second: String?
 }
 
 struct Dongne {
@@ -20,12 +26,14 @@ struct Dongne {
     var content: String
     var name: String
     var location: String
+    var time: String
 }
 
-struct Chatting {
+struct Chat {
     var name: String
     var profile: String
     var location: String
+    var time: String
     var content: String
     var imageStr: String
 }
