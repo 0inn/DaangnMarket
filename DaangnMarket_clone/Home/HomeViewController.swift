@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
         setupRightItems()
         setupTableView()
         setupPlusBtn()
+        setupRefresh()
     }
     
     private func setupPullDownBtn() {
@@ -73,15 +74,24 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: HomeTableViewCell.identifier)
         
         tableView.rowHeight = 145
-        // warning 뜨고 이상한 크기로 설정 -> 해결 필요
-        //tableView.estimatedRowHeight = 145
-        //tableView.rowHeight = UITableView.automaticDimension
         
     }
     
     private func setupPlusBtn() {   // 그림자
         plusBtn.layer.shadowOpacity = 0.2   // 그림자 투명도
         plusBtn.layer.shadowRadius = 6  // 그림자 경계의 선명도
+    }
+    
+    private func setupRefresh() {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(updateUI(refresh:)), for: .valueChanged)
+        refresh.tintColor = .systemOrange
+        tableView.addSubview(refresh)
+    }
+    
+    @objc func updateUI(refresh: UIRefreshControl) {
+        refresh.endRefreshing() // 종료
+        tableView.reloadData()  // 테이블 뷰 로드
     }
 
 }

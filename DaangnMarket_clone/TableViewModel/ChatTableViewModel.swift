@@ -9,7 +9,7 @@ import Foundation
 
 class ChatTableViewModel {
     
-    private var chatStorage: [Chat] = []
+    public var chatStorage: [Chat] = []
     
     init() {
         chatStorage = [

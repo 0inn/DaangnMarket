@@ -23,6 +23,7 @@ class DongneViewController: UIViewController {
         setupRightItems()
         setupTable()
         setupWriteBtn()
+        setupRefresh()
     }
     
     private func setupPullDownBtn() {
@@ -76,6 +77,18 @@ class DongneViewController: UIViewController {
         writeBtn.layer.shadowOpacity = 0.2
         writeBtn.layer.shadowRadius = 6
     }
+    
+    private func setupRefresh() {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(updateUI(refresh:)), for: .valueChanged)
+        refresh.tintColor = .systemOrange
+        tableView.addSubview(refresh)
+    }
+    
+    @objc func updateUI(refresh: UIRefreshControl) {
+        refresh.endRefreshing() // 종료
+        tableView.reloadData()  // 테이블 뷰 로드
+    }
 
 }
 
@@ -98,6 +111,5 @@ extension DongneViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
-    
     
 }

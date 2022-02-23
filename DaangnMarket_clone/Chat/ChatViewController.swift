@@ -18,6 +18,7 @@ class ChatViewController: UIViewController {
         setupTitle()
         setupTable()
         setupRightItems()
+        setupRefresh()
     }
     
     private func makeBtn( _ name: String) -> UIButton {
@@ -50,6 +51,17 @@ class ChatViewController: UIViewController {
         tableView.rowHeight = 75
     }
     
+    private func setupRefresh() {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(updateUI(refresh:)), for: .valueChanged)
+        refresh.tintColor = .systemOrange
+        tableView.addSubview(refresh)
+    }
+    
+    @objc func updateUI(refresh: UIRefreshControl) {
+        refresh.endRefreshing() // 종료
+        tableView.reloadData()  // 테이블 뷰 로드
+    }
 }
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
@@ -63,7 +75,16 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cellData = TableViewModel.itemAt(indexPath.row)
         cell.setupData(cellData)
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    // MARK: Delete
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            TableViewModel.chatStorage.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
     
 }
