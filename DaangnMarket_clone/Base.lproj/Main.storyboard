@@ -80,6 +80,9 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addItem:" destination="vKw-QM-5NC" eventType="touchUpInside" id="TCW-Oe-Lu9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QS6-dp-CJc"/>
@@ -102,6 +105,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msu-LM-WUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1837.68115942029" y="-1539.5089285714284"/>
+        </scene>
+        <!--중고거래 글쓰기-->
+        <scene sceneID="s1C-vZ-izu">
+            <objects>
+                <viewController storyboardIdentifier="AddItemViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5jO-nI-hvU" customClass="AddItemViewController" customModule="DaangnMarket_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYK-tA-VsR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사진" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBV-4K-Hd5">
+                                <rect key="frame" x="10" y="108" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dLY-pR-cUr"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="글 제목" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nF4-cc-eCy">
+                                <rect key="frame" x="10" y="168" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eQp-tM-FnK"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="가격" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-vq-rXn">
+                                <rect key="frame" x="10" y="228" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JMM-Jk-JfW"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="내 동네" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AtL-sh-LSS">
+                                <rect key="frame" x="10" y="288" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="15h-et-yqQ"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="게시글 내용" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Oc-Vp-6ai">
+                                <rect key="frame" x="10" y="348" width="414" height="528"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AVr-AY-9Cb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AVr-AY-9Cb" firstAttribute="trailing" secondItem="nF4-cc-eCy" secondAttribute="trailing" constant="10" id="6eM-Lx-0md"/>
+                            <constraint firstItem="AVr-AY-9Cb" firstAttribute="trailing" secondItem="kBV-4K-Hd5" secondAttribute="trailing" constant="10" id="7nG-jS-2eV"/>
+                            <constraint firstItem="kBV-4K-Hd5" firstAttribute="top" secondItem="AVr-AY-9Cb" secondAttribute="top" constant="20" id="BBN-yK-jUj"/>
+                            <constraint firstItem="AtL-sh-LSS" firstAttribute="leading" secondItem="AVr-AY-9Cb" secondAttribute="leading" constant="10" id="Bpg-mG-Bhb"/>
+                            <constraint firstItem="8Oc-Vp-6ai" firstAttribute="leading" secondItem="AVr-AY-9Cb" secondAttribute="leading" constant="10" id="E5N-iG-Vnu"/>
+                            <constraint firstItem="nF4-cc-eCy" firstAttribute="leading" secondItem="AVr-AY-9Cb" secondAttribute="leading" constant="10" id="JDS-BT-14M"/>
+                            <constraint firstItem="kBV-4K-Hd5" firstAttribute="leading" secondItem="AVr-AY-9Cb" secondAttribute="leading" constant="10" id="Sjy-gs-5OZ"/>
+                            <constraint firstItem="8Oc-Vp-6ai" firstAttribute="trailing" secondItem="AVr-AY-9Cb" secondAttribute="trailing" constant="10" id="W2a-IJ-JEt"/>
+                            <constraint firstItem="8Oc-Vp-6ai" firstAttribute="top" secondItem="AtL-sh-LSS" secondAttribute="bottom" constant="10" id="Xrd-8Z-tM5"/>
+                            <constraint firstItem="AVr-AY-9Cb" firstAttribute="trailing" secondItem="AtL-sh-LSS" secondAttribute="trailing" constant="10" id="YZ7-xS-wYr"/>
+                            <constraint firstAttribute="bottom" secondItem="8Oc-Vp-6ai" secondAttribute="bottom" constant="20" id="axz-JO-kKK"/>
+                            <constraint firstItem="nF4-cc-eCy" firstAttribute="top" secondItem="kBV-4K-Hd5" secondAttribute="bottom" constant="10" id="h8q-Wx-x65"/>
+                            <constraint firstItem="S5e-vq-rXn" firstAttribute="top" secondItem="nF4-cc-eCy" secondAttribute="bottom" constant="10" id="kzW-2O-Kxf"/>
+                            <constraint firstItem="AVr-AY-9Cb" firstAttribute="trailing" secondItem="S5e-vq-rXn" secondAttribute="trailing" constant="10" id="nic-bp-DTL"/>
+                            <constraint firstItem="AtL-sh-LSS" firstAttribute="top" secondItem="S5e-vq-rXn" secondAttribute="bottom" constant="10" id="sSG-NO-EDh"/>
+                            <constraint firstItem="S5e-vq-rXn" firstAttribute="leading" secondItem="AVr-AY-9Cb" secondAttribute="leading" constant="10" id="xBo-Es-JkM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="중고거래 글쓰기" id="4Bv-1g-oYQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="PKP-J7-cOH">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="close:" destination="5jO-nI-hvU" id="uaB-OB-wG2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="완료" id="vxp-19-ooS">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <action selector="done:" destination="5jO-nI-hvU" id="zPn-fL-X0T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTF" destination="8Oc-Vp-6ai" id="OmD-bh-Qyo"/>
+                        <outlet property="imgTF" destination="kBV-4K-Hd5" id="SxI-0s-oao"/>
+                        <outlet property="locationTF" destination="AtL-sh-LSS" id="Vxe-td-P2i"/>
+                        <outlet property="priceTF" destination="S5e-vq-rXn" id="QUc-Ab-uN0"/>
+                        <outlet property="titleTF" destination="nF4-cc-eCy" id="OAs-Dw-nMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-kc-AZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3708.6956521739135" y="-1540.1785714285713"/>
         </scene>
         <!--동네생활-->
         <scene sceneID="ukZ-YH-njr">
@@ -192,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="DaangnMarket_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,6 +408,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4E-7A-bBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1837.68115942029" y="1713.6160714285713"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m4a-cn-ncF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LAR-Sb-HX7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sZ5-6r-K1x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5jO-nI-hvU" kind="relationship" relationship="rootViewController" id="jgQ-J3-sZO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Akd-f6-Co3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="-1540.1785714285713"/>
         </scene>
     </scenes>
     <resources>

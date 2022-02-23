@@ -8,7 +8,7 @@
 import UIKit
 
 // 3 Controller 구성
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var plusBtn: UIButton!
     
@@ -25,6 +25,14 @@ class HomeViewController: UIViewController {
         setupTableView()
         setupPlusBtn()
         setupRefresh()
+    }
+    
+    @IBAction func addItem(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AddItemViewController") as! AddItemViewController
+        let nvc = UINavigationController(rootViewController: vc)
+        nvc.modalPresentationStyle = .fullScreen
+        vc.delegate = self
+        self.present(nvc, animated: true, completion: nil)
     }
     
     private func setupPullDownBtn() {
@@ -96,6 +104,7 @@ class HomeViewController: UIViewController {
 
 }
 
+
 // 3-6 프로토콜 채택
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -116,5 +125,26 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    // MARK: Delete
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableViewModel.homeStorage.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+    }
+    
+}
+
+// delegate 패턴 사용
+extension HomeViewController: AddDelegate {
+    func passText(_ data: [String]) {
+        print("here")
+        tableViewModel.homeStorage.insert(Home(imageStr: data[0], title: data[1], location: data[2], price: data[3], time: "1초 전"), at: 0)
+        
+        // MARK: Create
+        tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .fade)
+        tableView.endUpdates()
+    }
 }
 

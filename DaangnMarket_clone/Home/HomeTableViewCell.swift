@@ -28,7 +28,11 @@ class HomeTableViewCell: UITableViewCell {
         let imageStr = data.imageStr
         let name = data.title
         let location = data.location
-        let price = data.price
+        // 세자릿수마다 콤마 넣기
+        let num = NumberFormatter()
+        num.numberStyle = .decimal
+        let money = Int(data.price)!
+        let price = num.string(from: NSNumber(value: money))! + "원"
         let time = "· " + data.time
         
         cellHomeImageView.image = UIImage(named: imageStr + ".PNG")

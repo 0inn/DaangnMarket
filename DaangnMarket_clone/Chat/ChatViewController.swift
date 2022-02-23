@@ -85,6 +85,7 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
             TableViewModel.chatStorage.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+        
     }
     
 }
