@@ -20,7 +20,10 @@ class ChatTableViewModel {
             Chat(name: "버섯", profile: "채팅2", location: "여월동", time: "5달전", content: "네 ~ 잘 쓰시길 바랄게요 ~", imageStr: ""),
             Chat(name: "오이", profile: "", location: "여기동", time: "6달전", content: "오이님이 이모티콘을 보냈어요.", imageStr: ""),
             Chat(name: "양파", profile: "", location: "저기동", time: "11달전", content: "네 !", imageStr: "홈2"),
-            Chat(name: "브로콜리", profile: "", location: "모두동", time: "1년전", content: "좋은 하루 되세요 ~ !", imageStr: "")
+            Chat(name: "브로콜리", profile: "", location: "모두동", time: "1년전", content: "좋은 하루 되세요 ~ !", imageStr: ""),
+            Chat(name: "양배추", profile: "", location: "여기동", time: "6달전", content: "오이님이 이모티콘을 보냈어요.", imageStr: ""),
+            Chat(name: "청경채", profile: "", location: "저기동", time: "11달전", content: "청경채님이 사진을 보냈어요.", imageStr: "홈5"),
+            Chat(name: "팽이버섯", profile: "", location: "모두동", time: "1년전", content: "감사합니다 ~ !", imageStr: "")
         ]
     }
     

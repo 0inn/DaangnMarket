@@ -10,15 +10,17 @@ import UIKit
 class DongneViewController: UIViewController {
 
     @IBOutlet weak var writeBtn: UIButton!
+    
     var collectionView: UICollectionView!
+    
     var tableViewModel = DongneTableViewModel()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPullDownBtn()
         setupRightItems()
-        setupKeyWords()
         setupTable()
         setupWriteBtn()
     }
@@ -58,26 +60,13 @@ class DongneViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: bellBtn), spacer,  UIBarButtonItem(customView: menuBtn), spacer, UIBarButtonItem(customView: searchBtn)]
     }
     
-    private func makekw( _ name: String) -> UIButton {
-        let btn = UIButton(type: .system)
-        btn.setTitle(name, for: .normal)
-        btn.backgroundColor = .systemGray6
-        btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        btn.layer.cornerRadius = 3
-        return btn
-    }
-    
-    private func setupKeyWords() {
-        let keywords: [UIButton]
-        keywords = [makekw("동네질문"), makekw("동네맛집"), makekw("동네소식"), makekw("동네소식"), makekw("동네소식"), makekw("동네소식"), makekw("동네소식"), makekw("동네소식"), makekw("동네소식")]
-    }
-    
     private func setupTable() {
         tableView.backgroundColor = .systemGray6
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "DongneTableViewCell", bundle: nil), forCellReuseIdentifier: DongneTableViewCell.identifier)
+        tableView.register(UINib(nibName: "KeywordTableViewCell", bundle: nil), forCellReuseIdentifier: KeywordTableViewCell.identifier)
 
         tableView.estimatedRowHeight = 160
         tableView.rowHeight = UITableView.automaticDimension
@@ -97,11 +86,17 @@ extension DongneViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DongneTableViewCell.identifier, for: indexPath) as! DongneTableViewCell
+        if (indexPath.row == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: KeywordTableViewCell.identifier, for: indexPath) as! KeywordTableViewCell
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: DongneTableViewCell.identifier, for: indexPath) as! DongneTableViewCell
         
-        let cellData = tableViewModel.itemAt(indexPath.row)
-        cell.setupData(cellData)
-        return cell
+            let cellData = tableViewModel.itemAt(indexPath.row)
+            cell.setupData(cellData)
+            return cell
+        }
     }
     
     
