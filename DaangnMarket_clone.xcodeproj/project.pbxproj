@@ -15,14 +15,14 @@
 		A9022E2627C1F8C400E01F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9022E2427C1F8C400E01F1D /* LaunchScreen.storyboard */; };
 		A9022E2E27C219A900E01F1D /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E2D27C219A900E01F1D /* Setting.swift */; };
 		A9022E3027C222DB00E01F1D /* HomeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E2F27C222DB00E01F1D /* HomeTableViewModel.swift */; };
-		A9022E3827C224F700E01F1D /* 홈2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3427C224F700E01F1D /* 홈2.PNG */; };
-		A9022E3927C224F700E01F1D /* 홈3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3527C224F700E01F1D /* 홈3.PNG */; };
-		A9022E3A27C224F700E01F1D /* 홈4.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3627C224F700E01F1D /* 홈4.PNG */; };
-		A9022E3B27C224F700E01F1D /* 홈1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3727C224F700E01F1D /* 홈1.PNG */; };
+		A9022E3827C224F700E01F1D /* 홈2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3427C224F700E01F1D /* 홈2.png */; };
+		A9022E3927C224F700E01F1D /* 홈3.png in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3527C224F700E01F1D /* 홈3.png */; };
+		A9022E3A27C224F700E01F1D /* 홈4.png in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3627C224F700E01F1D /* 홈4.png */; };
+		A9022E3B27C224F700E01F1D /* 홈1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9022E3727C224F700E01F1D /* 홈1.png */; };
 		A9022E4827C235D600E01F1D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E4627C235D600E01F1D /* HomeTableViewCell.swift */; };
 		A9022E4927C235D600E01F1D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9022E4727C235D600E01F1D /* HomeTableViewCell.xib */; };
-		A9022E4C27C2395F00E01F1D /* 홈5.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9022E4A27C2395F00E01F1D /* 홈5.PNG */; };
-		A9022E4D27C2395F00E01F1D /* 홈6.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9022E4B27C2395F00E01F1D /* 홈6.PNG */; };
+		A9022E4C27C2395F00E01F1D /* 홈5.png in Resources */ = {isa = PBXBuildFile; fileRef = A9022E4A27C2395F00E01F1D /* 홈5.png */; };
+		A9022E4D27C2395F00E01F1D /* 홈6.png in Resources */ = {isa = PBXBuildFile; fileRef = A9022E4B27C2395F00E01F1D /* 홈6.png */; };
 		A9022E5527C29F2200E01F1D /* DongneTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E5427C29F2200E01F1D /* DongneTableViewModel.swift */; };
 		A9022E5727C29FB000E01F1D /* DongneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E5627C29FB000E01F1D /* DongneViewController.swift */; };
 		A931C9FC27C36D5600F100F5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931C9FB27C36D5600F100F5 /* MyPageViewController.swift */; };
@@ -50,7 +50,26 @@
 		A9FFCE8E27C5E63C00376360 /* 관심목록.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCE8A27C5E63C00376360 /* 관심목록.png */; };
 		A9FFCE8F27C5E63C00376360 /* 구매내역.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCE8B27C5E63C00376360 /* 구매내역.png */; };
 		A9FFCE9327C6189600376360 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCE9227C6189600376360 /* AddItemViewController.swift */; };
-		A9FFCE9927C62DAB00376360 /* innie.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCE9827C62DAB00376360 /* innie.PNG */; };
+		A9FFCE9927C62DAB00376360 /* innie.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCE9827C62DAB00376360 /* innie.png */; };
+		A9FFCEA027C73EBB00376360 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCE9E27C73EBB00376360 /* MapCollectionViewCell.swift */; };
+		A9FFCEA127C73EBB00376360 /* MapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCE9F27C73EBB00376360 /* MapCollectionViewCell.xib */; };
+		A9FFCEA427C747B300376360 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCEA227C747B300376360 /* HeaderCollectionViewCell.swift */; };
+		A9FFCEA527C747B300376360 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEA327C747B300376360 /* HeaderCollectionViewCell.xib */; };
+		A9FFCEAD27C74C7300376360 /* 당근미니.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEA627C74C7200376360 /* 당근미니.png */; };
+		A9FFCEAE27C74C7300376360 /* 쿠폰북.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEA727C74C7200376360 /* 쿠폰북.png */; };
+		A9FFCEAF27C74C7300376360 /* 중고차 직거래.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEA827C74C7200376360 /* 중고차 직거래.png */; };
+		A9FFCEB027C74C7300376360 /* 농수산물.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEA927C74C7300376360 /* 농수산물.png */; };
+		A9FFCEB127C74C7300376360 /* 과외 클래스.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEAA27C74C7300376360 /* 과외 클래스.png */; };
+		A9FFCEB227C74C7300376360 /* 부동산.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEAB27C74C7300376360 /* 부동산.png */; };
+		A9FFCEB327C74C7300376360 /* 알바.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEAC27C74C7300376360 /* 알바.png */; };
+		A9FFCEB727C75D7500376360 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = A9FFCEB627C75D7500376360 /* Tabman */; };
+		A9FFCEBD27C7602200376360 /* 지도.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEB927C7602200376360 /* 지도.png */; };
+		A9FFCEBE27C7602200376360 /* 음식1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEBA27C7602200376360 /* 음식1.png */; };
+		A9FFCEBF27C7602200376360 /* 음식3.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEBB27C7602200376360 /* 음식3.png */; };
+		A9FFCEC027C7602200376360 /* 음식2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCEBC27C7602200376360 /* 음식2.png */; };
+		A9FFCEC227C770FF00376360 /* FirstFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCEC127C770FF00376360 /* FirstFoodViewController.swift */; };
+		A9FFCEC427C7710900376360 /* SecondFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCEC327C7710900376360 /* SecondFoodViewController.swift */; };
+		A9FFCEC627C7776000376360 /* TabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCEC527C7776000376360 /* TabManViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,14 +83,14 @@
 		A9022E2727C1F8C400E01F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9022E2D27C219A900E01F1D /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		A9022E2F27C222DB00E01F1D /* HomeTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewModel.swift; sourceTree = "<group>"; };
-		A9022E3427C224F700E01F1D /* 홈2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈2.PNG"; sourceTree = "<group>"; };
-		A9022E3527C224F700E01F1D /* 홈3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈3.PNG"; sourceTree = "<group>"; };
-		A9022E3627C224F700E01F1D /* 홈4.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈4.PNG"; sourceTree = "<group>"; };
-		A9022E3727C224F700E01F1D /* 홈1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈1.PNG"; sourceTree = "<group>"; };
+		A9022E3427C224F700E01F1D /* 홈2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈2.png"; sourceTree = "<group>"; };
+		A9022E3527C224F700E01F1D /* 홈3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈3.png"; sourceTree = "<group>"; };
+		A9022E3627C224F700E01F1D /* 홈4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈4.png"; sourceTree = "<group>"; };
+		A9022E3727C224F700E01F1D /* 홈1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈1.png"; sourceTree = "<group>"; };
 		A9022E4627C235D600E01F1D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A9022E4727C235D600E01F1D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		A9022E4A27C2395F00E01F1D /* 홈5.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈5.PNG"; sourceTree = "<group>"; };
-		A9022E4B27C2395F00E01F1D /* 홈6.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈6.PNG"; sourceTree = "<group>"; };
+		A9022E4A27C2395F00E01F1D /* 홈5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈5.png"; sourceTree = "<group>"; };
+		A9022E4B27C2395F00E01F1D /* 홈6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "홈6.png"; sourceTree = "<group>"; };
 		A9022E5427C29F2200E01F1D /* DongneTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongneTableViewModel.swift; sourceTree = "<group>"; };
 		A9022E5627C29FB000E01F1D /* DongneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongneViewController.swift; sourceTree = "<group>"; };
 		A931C9FB27C36D5600F100F5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +117,25 @@
 		A9FFCE8A27C5E63C00376360 /* 관심목록.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "관심목록.png"; sourceTree = "<group>"; };
 		A9FFCE8B27C5E63C00376360 /* 구매내역.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "구매내역.png"; sourceTree = "<group>"; };
 		A9FFCE9227C6189600376360 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
-		A9FFCE9827C62DAB00376360 /* innie.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innie.PNG; path = ../../../../Downloads/innie.PNG; sourceTree = "<group>"; };
+		A9FFCE9827C62DAB00376360 /* innie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innie.png; path = ../../../../Downloads/innie.png; sourceTree = "<group>"; };
+		A9FFCE9E27C73EBB00376360 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9FFCE9F27C73EBB00376360 /* MapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9FFCEA227C747B300376360 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9FFCEA327C747B300376360 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9FFCEA627C74C7200376360 /* 당근미니.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "당근미니.png"; sourceTree = "<group>"; };
+		A9FFCEA727C74C7200376360 /* 쿠폰북.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "쿠폰북.png"; sourceTree = "<group>"; };
+		A9FFCEA827C74C7200376360 /* 중고차 직거래.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "중고차 직거래.png"; sourceTree = "<group>"; };
+		A9FFCEA927C74C7300376360 /* 농수산물.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "농수산물.png"; sourceTree = "<group>"; };
+		A9FFCEAA27C74C7300376360 /* 과외 클래스.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "과외 클래스.png"; sourceTree = "<group>"; };
+		A9FFCEAB27C74C7300376360 /* 부동산.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "부동산.png"; sourceTree = "<group>"; };
+		A9FFCEAC27C74C7300376360 /* 알바.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "알바.png"; sourceTree = "<group>"; };
+		A9FFCEB927C7602200376360 /* 지도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "지도.png"; sourceTree = "<group>"; };
+		A9FFCEBA27C7602200376360 /* 음식1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "음식1.png"; sourceTree = "<group>"; };
+		A9FFCEBB27C7602200376360 /* 음식3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "음식3.png"; sourceTree = "<group>"; };
+		A9FFCEBC27C7602200376360 /* 음식2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "음식2.png"; sourceTree = "<group>"; };
+		A9FFCEC127C770FF00376360 /* FirstFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFoodViewController.swift; sourceTree = "<group>"; };
+		A9FFCEC327C7710900376360 /* SecondFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFoodViewController.swift; sourceTree = "<group>"; };
+		A9FFCEC527C7776000376360 /* TabManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FFCE8527C5CD4F00376360 /* SnapKit in Frameworks */,
+				A9FFCEB727C75D7500376360 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +173,7 @@
 				A9022E1927C1F8C400E01F1D /* AppDelegate.swift */,
 				A9022E1B27C1F8C400E01F1D /* SceneDelegate.swift */,
 				A9022E1F27C1F8C400E01F1D /* Main.storyboard */,
+				A9FFCEC527C7776000376360 /* TabManViewController.swift */,
 				A9022E3127C222E800E01F1D /* Entity */,
 				A9022E3227C222FA00E01F1D /* TableViewModel */,
 				A9022E4E27C23EB900E01F1D /* Home */,
@@ -172,7 +211,18 @@
 		A9022E3327C224C300E01F1D /* png */ = {
 			isa = PBXGroup;
 			children = (
-				A9FFCE9827C62DAB00376360 /* innie.PNG */,
+				A9FFCEBA27C7602200376360 /* 음식1.png */,
+				A9FFCEBC27C7602200376360 /* 음식2.png */,
+				A9FFCEBB27C7602200376360 /* 음식3.png */,
+				A9FFCEB927C7602200376360 /* 지도.png */,
+				A9FFCEAA27C74C7300376360 /* 과외 클래스.png */,
+				A9FFCEA927C74C7300376360 /* 농수산물.png */,
+				A9FFCEA627C74C7200376360 /* 당근미니.png */,
+				A9FFCEAB27C74C7300376360 /* 부동산.png */,
+				A9FFCEAC27C74C7300376360 /* 알바.png */,
+				A9FFCEA827C74C7200376360 /* 중고차 직거래.png */,
+				A9FFCEA727C74C7200376360 /* 쿠폰북.png */,
+				A9FFCE9827C62DAB00376360 /* innie.png */,
 				A9FFCE8A27C5E63C00376360 /* 관심목록.png */,
 				A9FFCE8B27C5E63C00376360 /* 구매내역.png */,
 				A9FFCE8927C5E63C00376360 /* 판매내역.png */,
@@ -181,12 +231,12 @@
 				A9CF50AC27C35211003DB5DA /* 채팅기본.png */,
 				A9CF50A327C34FC7003DB5DA /* 채팅1.png */,
 				A9CF50AA27C351F7003DB5DA /* 채팅2.png */,
-				A9022E3727C224F700E01F1D /* 홈1.PNG */,
-				A9022E3427C224F700E01F1D /* 홈2.PNG */,
-				A9022E3527C224F700E01F1D /* 홈3.PNG */,
-				A9022E3627C224F700E01F1D /* 홈4.PNG */,
-				A9022E4A27C2395F00E01F1D /* 홈5.PNG */,
-				A9022E4B27C2395F00E01F1D /* 홈6.PNG */,
+				A9022E3727C224F700E01F1D /* 홈1.png */,
+				A9022E3427C224F700E01F1D /* 홈2.png */,
+				A9022E3527C224F700E01F1D /* 홈3.png */,
+				A9022E3627C224F700E01F1D /* 홈4.png */,
+				A9022E4A27C2395F00E01F1D /* 홈5.png */,
+				A9022E4B27C2395F00E01F1D /* 홈6.png */,
 			);
 			path = png;
 			sourceTree = "<group>";
@@ -239,9 +289,31 @@
 		A9FFCE7127C4BE8400376360 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				A9FFCE7227C4BE9B00376360 /* MapViewController.swift */,
+				A9FFCEB427C74CCA00376360 /* View1 */,
+				A9FFCEB827C75D8000376360 /* View2 */,
+				A9FFCEC127C770FF00376360 /* FirstFoodViewController.swift */,
+				A9FFCEC327C7710900376360 /* SecondFoodViewController.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		A9FFCEB427C74CCA00376360 /* View1 */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFCE7227C4BE9B00376360 /* MapViewController.swift */,
+				A9FFCEA227C747B300376360 /* HeaderCollectionViewCell.swift */,
+				A9FFCEA327C747B300376360 /* HeaderCollectionViewCell.xib */,
+				A9FFCE9E27C73EBB00376360 /* MapCollectionViewCell.swift */,
+				A9FFCE9F27C73EBB00376360 /* MapCollectionViewCell.xib */,
+			);
+			path = View1;
+			sourceTree = "<group>";
+		};
+		A9FFCEB827C75D8000376360 /* View2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +334,7 @@
 			name = DaangnMarket_clone;
 			packageProductDependencies = (
 				A9FFCE8427C5CD4F00376360 /* SnapKit */,
+				A9FFCEB627C75D7500376360 /* Tabman */,
 			);
 			productName = DaangnMarket_clone;
 			productReference = A9022E1627C1F8C400E01F1D /* DaangnMarket_clone.app */;
@@ -293,6 +366,7 @@
 			mainGroup = A9022E0D27C1F8C400E01F1D;
 			packageReferences = (
 				A9FFCE8327C5CD4F00376360 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A9FFCEB527C75D7500376360 /* XCRemoteSwiftPackageReference "Tabman" */,
 			);
 			productRefGroup = A9022E1727C1F8C400E01F1D /* Products */;
 			projectDirPath = "";
@@ -310,28 +384,41 @@
 			files = (
 				A9FFCE8D27C5E63C00376360 /* 판매내역.png in Resources */,
 				A9CF50A627C34FC7003DB5DA /* 채팅1.png in Resources */,
+				A9FFCEA127C73EBB00376360 /* MapCollectionViewCell.xib in Resources */,
+				A9FFCEB327C74C7300376360 /* 알바.png in Resources */,
 				A9FFCE7927C4E3D400376360 /* KeywordTableViewCell.xib in Resources */,
 				A9022E2627C1F8C400E01F1D /* LaunchScreen.storyboard in Resources */,
 				A9FFCE8C27C5E63C00376360 /* profile.png in Resources */,
 				A9FFCE8F27C5E63C00376360 /* 구매내역.png in Resources */,
+				A9FFCEBF27C7602200376360 /* 음식3.png in Resources */,
+				A9FFCEBE27C7602200376360 /* 음식1.png in Resources */,
 				A9FFCE8727C5DE0B00376360 /* pay.png in Resources */,
-				A9022E3B27C224F700E01F1D /* 홈1.PNG in Resources */,
+				A9022E3B27C224F700E01F1D /* 홈1.png in Resources */,
 				A9022E4927C235D600E01F1D /* HomeTableViewCell.xib in Resources */,
+				A9FFCEAD27C74C7300376360 /* 당근미니.png in Resources */,
 				A9FFCE7D27C4E5EF00376360 /* KeywordCollectionViewCell.xib in Resources */,
+				A9FFCEC027C7602200376360 /* 음식2.png in Resources */,
 				A9FFCE8127C50E6200376360 /* MypageTableViewCell.xib in Resources */,
 				A9022E2327C1F8C400E01F1D /* Assets.xcassets in Resources */,
+				A9FFCEB127C74C7300376360 /* 과외 클래스.png in Resources */,
+				A9FFCEAE27C74C7300376360 /* 쿠폰북.png in Resources */,
 				A9022E2127C1F8C400E01F1D /* Main.storyboard in Resources */,
-				A9022E3827C224F700E01F1D /* 홈2.PNG in Resources */,
+				A9FFCEB227C74C7300376360 /* 부동산.png in Resources */,
+				A9FFCEB027C74C7300376360 /* 농수산물.png in Resources */,
+				A9022E3827C224F700E01F1D /* 홈2.png in Resources */,
 				A9CF50B627C357D2003DB5DA /* ChatTableViewCell.xib in Resources */,
 				A9CF50AB27C351F7003DB5DA /* 채팅2.png in Resources */,
 				A9CF50AD27C35211003DB5DA /* 채팅기본.png in Resources */,
-				A9022E3927C224F700E01F1D /* 홈3.PNG in Resources */,
-				A9022E3A27C224F700E01F1D /* 홈4.PNG in Resources */,
+				A9022E3927C224F700E01F1D /* 홈3.png in Resources */,
+				A9022E3A27C224F700E01F1D /* 홈4.png in Resources */,
 				A9CF509F27C2A112003DB5DA /* DongneTableViewCell.xib in Resources */,
-				A9022E4C27C2395F00E01F1D /* 홈5.PNG in Resources */,
+				A9022E4C27C2395F00E01F1D /* 홈5.png in Resources */,
 				A9FFCE8E27C5E63C00376360 /* 관심목록.png in Resources */,
-				A9022E4D27C2395F00E01F1D /* 홈6.PNG in Resources */,
-				A9FFCE9927C62DAB00376360 /* innie.PNG in Resources */,
+				A9022E4D27C2395F00E01F1D /* 홈6.png in Resources */,
+				A9FFCE9927C62DAB00376360 /* innie.png in Resources */,
+				A9FFCEAF27C74C7300376360 /* 중고차 직거래.png in Resources */,
+				A9FFCEBD27C7602200376360 /* 지도.png in Resources */,
+				A9FFCEA527C747B300376360 /* HeaderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +432,7 @@
 				A9022E4827C235D600E01F1D /* HomeTableViewCell.swift in Sources */,
 				A9022E1E27C1F8C400E01F1D /* HomeViewController.swift in Sources */,
 				A9FFCE8027C50E6200376360 /* MypageTableViewCell.swift in Sources */,
+				A9FFCEA427C747B300376360 /* HeaderCollectionViewCell.swift in Sources */,
 				A931C9FF27C36DFE00F100F5 /* MyPageTableViewModel.swift in Sources */,
 				A9CF50B027C352CA003DB5DA /* ChatViewController.swift in Sources */,
 				A9FFCE7C27C4E5EF00376360 /* KeywordCollectionViewCell.swift in Sources */,
@@ -356,11 +444,15 @@
 				A9CF509E27C2A112003DB5DA /* DongneTableViewCell.swift in Sources */,
 				A9022E2E27C219A900E01F1D /* Setting.swift in Sources */,
 				A9CF50B527C357D2003DB5DA /* ChatTableViewCell.swift in Sources */,
+				A9FFCEC427C7710900376360 /* SecondFoodViewController.swift in Sources */,
 				A9FFCE9327C6189600376360 /* AddItemViewController.swift in Sources */,
+				A9FFCEA027C73EBB00376360 /* MapCollectionViewCell.swift in Sources */,
+				A9FFCEC627C7776000376360 /* TabManViewController.swift in Sources */,
 				A9022E1C27C1F8C400E01F1D /* SceneDelegate.swift in Sources */,
 				A9FFCE7827C4E3D400376360 /* KeywordTableViewCell.swift in Sources */,
 				A9FFCE7327C4BE9B00376360 /* MapViewController.swift in Sources */,
 				A9022E5727C29FB000E01F1D /* DongneViewController.swift in Sources */,
+				A9FFCEC227C770FF00376360 /* FirstFoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +681,14 @@
 				kind = branch;
 			};
 		};
+		A9FFCEB527C75D7500376360 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -596,6 +696,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A9FFCE8327C5CD4F00376360 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		A9FFCEB627C75D7500376360 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9FFCEB527C75D7500376360 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

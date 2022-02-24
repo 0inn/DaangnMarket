@@ -35,7 +35,7 @@ class HomeTableViewCell: UITableViewCell {
         let price = num.string(from: NSNumber(value: money))! + "원"
         let time = "· " + data.time
         
-        cellHomeImageView.image = UIImage(named: imageStr + ".PNG")
+        cellHomeImageView.image = UIImage(named: imageStr + ".png")
         cellHomeImageView.layer.cornerRadius = 10
         cellHomeTitle.text = name
         cellHomeLocation.text = location

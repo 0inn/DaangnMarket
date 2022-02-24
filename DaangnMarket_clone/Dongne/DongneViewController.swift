@@ -99,7 +99,7 @@ extension DongneViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if (indexPath.row == 0) {
+        if (indexPath.row == 0) {   // 첫번째 줄에 collectionView 넣기
             let cell = tableView.dequeueReusableCell(withIdentifier: KeywordTableViewCell.identifier, for: indexPath) as! KeywordTableViewCell
             return cell
         }
