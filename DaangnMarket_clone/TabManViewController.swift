@@ -23,7 +23,7 @@ class TabManViewController: TabmanViewController {
     
     // MARK: 두번째 뷰 (이웃과 직접 만드는 동네 지도)
     private func setupTabMan() {
-        let firstVC = storyboard?.instantiateViewController(withIdentifier: "SecondFoodViewController") as! SecondFoodViewController
+        let firstVC = storyboard?.instantiateViewController(withIdentifier: "FirstFoodViewController") as! FirstFoodViewController
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondFoodViewController") as! SecondFoodViewController
         
         viewControllers.append(firstVC)
@@ -33,14 +33,18 @@ class TabManViewController: TabmanViewController {
         
 
         let bar = TMBar.ButtonBar()
+        // 배경 회색으로 나옴 -> 하얀색으로 바뀜
         bar.backgroundView.style = .blur(style: .light)
+        // 간격 설정
         bar.layout.contentInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        // 버튼 글씨 커스텀
         bar.buttons.customize { (button) in
             button.tintColor = .systemGray4
             button.selectedTintColor = .black
             button.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
             button.selectedFont = UIFont.systemFont(ofSize: 13, weight: .semibold)
         }
+        // 밑줄 쳐지는 부분
         bar.indicator.weight = .custom(value: 2)
         bar.indicator.tintColor = .black
         addBar(bar, dataSource: self, at: .custom(view: tabView, layout: nil))
@@ -48,9 +52,7 @@ class TabManViewController: TabmanViewController {
     }
 }
 
-
-// MARK: 두번째 뷰 (이웃과 직접 만드는 동네 지도)
-extension testViewController: PageboyViewControllerDataSource, TMBarDataSource {
+extension TabManViewController: PageboyViewControllerDataSource, TMBarDataSource {
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         switch index {

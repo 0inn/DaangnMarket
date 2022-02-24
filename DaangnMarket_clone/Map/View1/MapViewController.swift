@@ -9,7 +9,7 @@ import UIKit
 import Tabman
 import Pageboy
 
-class MapViewController: UIViewController {
+class MapViewController: TabmanViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -17,7 +17,9 @@ class MapViewController: UIViewController {
 
 
     // tab bar library - TabMan 사용
-
+    
+    private var viewControllers: [UIViewController] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLeftItem()
@@ -56,7 +58,6 @@ class MapViewController: UIViewController {
         collectionView.register(UINib(nibName: "HeaderCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: HeaderCollectionViewCell.identifier)
         collectionView.register(UINib(nibName: "MapCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: MapCollectionViewCell.identifier)
     }
-
 }
 
 // MARK: 첫번째 뷰 - 2 : CollectionView
