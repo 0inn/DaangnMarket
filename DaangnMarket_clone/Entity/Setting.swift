@@ -42,3 +42,9 @@ struct MyPage {
     var imageStr: String
     var title: String
 }
+
+struct Mini {
+    var img: String
+    var title: String
+    var content: String
+}

@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  TabManFoodViewController.swift
 //  DaangnMarket_clone
 //
 //  Created by 김영인 on 2022/02/22.
@@ -9,7 +9,7 @@ import UIKit
 import Tabman
 import Pageboy
 
-class TabManViewController: TabmanViewController {
+class TabManFoodViewController: TabmanViewController {
     
     @IBOutlet weak var tabView: UIView!
     
@@ -36,13 +36,13 @@ class TabManViewController: TabmanViewController {
         // 배경 회색으로 나옴 -> 하얀색으로 바뀜
         bar.backgroundView.style = .blur(style: .light)
         // 간격 설정
-        bar.layout.contentInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        bar.layout.contentInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         // 버튼 글씨 커스텀
         bar.buttons.customize { (button) in
             button.tintColor = .systemGray4
             button.selectedTintColor = .black
-            button.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
-            button.selectedFont = UIFont.systemFont(ofSize: 13, weight: .semibold)
+            button.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+            button.selectedFont = UIFont.systemFont(ofSize: 15, weight: .semibold)
         }
         // 밑줄 쳐지는 부분
         bar.indicator.weight = .custom(value: 2)
@@ -52,7 +52,7 @@ class TabManViewController: TabmanViewController {
     }
 }
 
-extension TabManViewController: PageboyViewControllerDataSource, TMBarDataSource {
+extension TabManFoodViewController: PageboyViewControllerDataSource, TMBarDataSource {
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         switch index {

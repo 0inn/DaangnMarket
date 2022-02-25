@@ -56,4 +56,7 @@ extension KeywordTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         return CGSize(width: width, height: 45)
    }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("hi")
+    }
 }

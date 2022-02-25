@@ -27,6 +27,10 @@
 		A9022E5727C29FB000E01F1D /* DongneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9022E5627C29FB000E01F1D /* DongneViewController.swift */; };
 		A931C9FC27C36D5600F100F5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931C9FB27C36D5600F100F5 /* MyPageViewController.swift */; };
 		A931C9FF27C36DFE00F100F5 /* MyPageTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931C9FE27C36DFE00F100F5 /* MyPageTableViewModel.swift */; };
+		A96B9B4727C8A88E000FF2B0 /* 당근미니3.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B9B4627C8A88E000FF2B0 /* 당근미니3.png */; };
+		A96B9B4B27C8AB16000FF2B0 /* 단골 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B9B4827C8AB16000FF2B0 /* 단골 2.png */; };
+		A96B9B4C27C8AB16000FF2B0 /* 단골.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B9B4927C8AB16000FF2B0 /* 단골.png */; };
+		A96B9B4D27C8AB16000FF2B0 /* 단골 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B9B4A27C8AB16000FF2B0 /* 단골 3.png */; };
 		A9CF509E27C2A112003DB5DA /* DongneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF509C27C2A112003DB5DA /* DongneTableViewCell.swift */; };
 		A9CF509F27C2A112003DB5DA /* DongneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CF509D27C2A112003DB5DA /* DongneTableViewCell.xib */; };
 		A9CF50A127C34E01003DB5DA /* ChatTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF50A027C34E01003DB5DA /* ChatTableViewModel.swift */; };
@@ -36,6 +40,11 @@
 		A9CF50B027C352CA003DB5DA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF50AF27C352CA003DB5DA /* ChatViewController.swift */; };
 		A9CF50B527C357D2003DB5DA /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF50B327C357D2003DB5DA /* ChatTableViewCell.swift */; };
 		A9CF50B627C357D2003DB5DA /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CF50B427C357D2003DB5DA /* ChatTableViewCell.xib */; };
+		A9F1441027C89EF20071A131 /* MiniCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1440E27C89EF20071A131 /* MiniCollectionViewCell.swift */; };
+		A9F1441127C89EF20071A131 /* MiniCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9F1440F27C89EF20071A131 /* MiniCollectionViewCell.xib */; };
+		A9F1441527C8A0A40071A131 /* MiniCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1441427C8A0A40071A131 /* MiniCollectionViewModel.swift */; };
+		A9F1441827C8A21F0071A131 /* 당근미니1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F1441627C8A21F0071A131 /* 당근미니1.png */; };
+		A9F1441927C8A21F0071A131 /* 당근미니2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F1441727C8A21F0071A131 /* 당근미니2.png */; };
 		A9FFCE7327C4BE9B00376360 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCE7227C4BE9B00376360 /* MapViewController.swift */; };
 		A9FFCE7827C4E3D400376360 /* KeywordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCE7627C4E3D400376360 /* KeywordTableViewCell.swift */; };
 		A9FFCE7927C4E3D400376360 /* KeywordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFCE7727C4E3D400376360 /* KeywordTableViewCell.xib */; };
@@ -70,6 +79,9 @@
 		A9FFCEC627C7776000376360 /* TabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCEC527C7776000376360 /* TabManViewController.swift */; };
 		A9FFCECA27C78DBC00376360 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A9FFCEC927C78DBC00376360 /* SnapKit */; };
 		A9FFCECD27C78DD900376360 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = A9FFCECC27C78DD900376360 /* Tabman */; };
+		A9FFCED027C79B4F00376360 /* TabManStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCECF27C79B4F00376360 /* TabManStoreViewController.swift */; };
+		A9FFCED227C79F6000376360 /* FirstStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCED127C79F6000376360 /* FirstStoreViewController.swift */; };
+		A9FFCED427C7A52600376360 /* SecondStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFCED327C7A52600376360 /* SecondStoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +107,10 @@
 		A9022E5627C29FB000E01F1D /* DongneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongneViewController.swift; sourceTree = "<group>"; };
 		A931C9FB27C36D5600F100F5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		A931C9FE27C36DFE00F100F5 /* MyPageTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewModel.swift; sourceTree = "<group>"; };
+		A96B9B4627C8A88E000FF2B0 /* 당근미니3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "당근미니3.png"; sourceTree = "<group>"; };
+		A96B9B4827C8AB16000FF2B0 /* 단골 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "단골 2.png"; sourceTree = "<group>"; };
+		A96B9B4927C8AB16000FF2B0 /* 단골.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "단골.png"; sourceTree = "<group>"; };
+		A96B9B4A27C8AB16000FF2B0 /* 단골 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "단골 3.png"; sourceTree = "<group>"; };
 		A9CF509C27C2A112003DB5DA /* DongneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongneTableViewCell.swift; sourceTree = "<group>"; };
 		A9CF509D27C2A112003DB5DA /* DongneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongneTableViewCell.xib; sourceTree = "<group>"; };
 		A9CF50A027C34E01003DB5DA /* ChatTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +120,11 @@
 		A9CF50AF27C352CA003DB5DA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A9CF50B327C357D2003DB5DA /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		A9CF50B427C357D2003DB5DA /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		A9F1440E27C89EF20071A131 /* MiniCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MiniCollectionViewCell.swift; path = DaangnMarket_clone/Map/View4/MiniCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A9F1440F27C89EF20071A131 /* MiniCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MiniCollectionViewCell.xib; path = DaangnMarket_clone/Map/View4/MiniCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		A9F1441427C8A0A40071A131 /* MiniCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCollectionViewModel.swift; sourceTree = "<group>"; };
+		A9F1441627C8A21F0071A131 /* 당근미니1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "당근미니1.png"; sourceTree = "<group>"; };
+		A9F1441727C8A21F0071A131 /* 당근미니2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "당근미니2.png"; sourceTree = "<group>"; };
 		A9FFCE7227C4BE9B00376360 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A9FFCE7627C4E3D400376360 /* KeywordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordTableViewCell.swift; sourceTree = "<group>"; };
 		A9FFCE7727C4E3D400376360 /* KeywordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordTableViewCell.xib; sourceTree = "<group>"; };
@@ -136,6 +157,9 @@
 		A9FFCEC127C770FF00376360 /* FirstFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFoodViewController.swift; sourceTree = "<group>"; };
 		A9FFCEC327C7710900376360 /* SecondFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFoodViewController.swift; sourceTree = "<group>"; };
 		A9FFCEC527C7776000376360 /* TabManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManViewController.swift; sourceTree = "<group>"; };
+		A9FFCECF27C79B4F00376360 /* TabManStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManStoreViewController.swift; sourceTree = "<group>"; };
+		A9FFCED127C79F6000376360 /* FirstStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStoreViewController.swift; sourceTree = "<group>"; };
+		A9FFCED327C7A52600376360 /* SecondStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +197,9 @@
 				A9022E1927C1F8C400E01F1D /* AppDelegate.swift */,
 				A9022E1B27C1F8C400E01F1D /* SceneDelegate.swift */,
 				A9022E1F27C1F8C400E01F1D /* Main.storyboard */,
-				A9FFCEC527C7776000376360 /* TabManViewController.swift */,
 				A9022E3127C222E800E01F1D /* Entity */,
 				A9022E3227C222FA00E01F1D /* TableViewModel */,
+				A9F1441327C8A0830071A131 /* CollectionViewModel */,
 				A9022E4E27C23EB900E01F1D /* Home */,
 				A9022E4F27C23EC500E01F1D /* Dongne */,
 				A9FFCE7127C4BE8400376360 /* Map */,
@@ -211,6 +235,12 @@
 		A9022E3327C224C300E01F1D /* png */ = {
 			isa = PBXGroup;
 			children = (
+				A96B9B4827C8AB16000FF2B0 /* 단골 2.png */,
+				A96B9B4A27C8AB16000FF2B0 /* 단골 3.png */,
+				A96B9B4927C8AB16000FF2B0 /* 단골.png */,
+				A96B9B4627C8A88E000FF2B0 /* 당근미니3.png */,
+				A9F1441727C8A21F0071A131 /* 당근미니2.png */,
+				A9F1441627C8A21F0071A131 /* 당근미니1.png */,
 				A9FFCEBA27C7602200376360 /* 음식1.png */,
 				A9FFCEBC27C7602200376360 /* 음식2.png */,
 				A9FFCEBB27C7602200376360 /* 음식3.png */,
@@ -286,13 +316,30 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		A9F1441227C89EFD0071A131 /* View4 */ = {
+			isa = PBXGroup;
+			children = (
+				A9F1440E27C89EF20071A131 /* MiniCollectionViewCell.swift */,
+				A9F1440F27C89EF20071A131 /* MiniCollectionViewCell.xib */,
+			);
+			path = View4;
+			sourceTree = "<group>";
+		};
+		A9F1441327C8A0830071A131 /* CollectionViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9F1441427C8A0A40071A131 /* MiniCollectionViewModel.swift */,
+			);
+			path = CollectionViewModel;
+			sourceTree = "<group>";
+		};
 		A9FFCE7127C4BE8400376360 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				A9FFCEB427C74CCA00376360 /* View1 */,
 				A9FFCEB827C75D8000376360 /* View2 */,
-				A9FFCEC127C770FF00376360 /* FirstFoodViewController.swift */,
-				A9FFCEC327C7710900376360 /* SecondFoodViewController.swift */,
+				A9FFCECE27C79A9600376360 /* View3 */,
+				A9F1441227C89EFD0071A131 /* View4 */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -312,8 +359,21 @@
 		A9FFCEB827C75D8000376360 /* View2 */ = {
 			isa = PBXGroup;
 			children = (
+				A9FFCEC527C7776000376360 /* TabManViewController.swift */,
+				A9FFCEC127C770FF00376360 /* FirstFoodViewController.swift */,
+				A9FFCEC327C7710900376360 /* SecondFoodViewController.swift */,
 			);
 			path = View2;
+			sourceTree = "<group>";
+		};
+		A9FFCECE27C79A9600376360 /* View3 */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFCECF27C79B4F00376360 /* TabManStoreViewController.swift */,
+				A9FFCED127C79F6000376360 /* FirstStoreViewController.swift */,
+				A9FFCED327C7A52600376360 /* SecondStoreViewController.swift */,
+			);
+			path = View3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FFCE8D27C5E63C00376360 /* 판매내역.png in Resources */,
+				A96B9B4C27C8AB16000FF2B0 /* 단골.png in Resources */,
 				A9CF50A627C34FC7003DB5DA /* 채팅1.png in Resources */,
 				A9FFCEA127C73EBB00376360 /* MapCollectionViewCell.xib in Resources */,
 				A9FFCEB327C74C7300376360 /* 알바.png in Resources */,
@@ -394,7 +455,9 @@
 				A9FFCEBE27C7602200376360 /* 음식1.png in Resources */,
 				A9FFCE8727C5DE0B00376360 /* pay.png in Resources */,
 				A9022E3B27C224F700E01F1D /* 홈1.png in Resources */,
+				A96B9B4D27C8AB16000FF2B0 /* 단골 3.png in Resources */,
 				A9022E4927C235D600E01F1D /* HomeTableViewCell.xib in Resources */,
+				A9F1441927C8A21F0071A131 /* 당근미니2.png in Resources */,
 				A9FFCEAD27C74C7300376360 /* 당근미니.png in Resources */,
 				A9FFCE7D27C4E5EF00376360 /* KeywordCollectionViewCell.xib in Resources */,
 				A9FFCEC027C7602200376360 /* 음식2.png in Resources */,
@@ -403,18 +466,22 @@
 				A9FFCEB127C74C7300376360 /* 과외 클래스.png in Resources */,
 				A9FFCEAE27C74C7300376360 /* 쿠폰북.png in Resources */,
 				A9022E2127C1F8C400E01F1D /* Main.storyboard in Resources */,
+				A96B9B4B27C8AB16000FF2B0 /* 단골 2.png in Resources */,
 				A9FFCEB227C74C7300376360 /* 부동산.png in Resources */,
 				A9FFCEB027C74C7300376360 /* 농수산물.png in Resources */,
 				A9022E3827C224F700E01F1D /* 홈2.png in Resources */,
+				A96B9B4727C8A88E000FF2B0 /* 당근미니3.png in Resources */,
 				A9CF50B627C357D2003DB5DA /* ChatTableViewCell.xib in Resources */,
 				A9CF50AB27C351F7003DB5DA /* 채팅2.png in Resources */,
 				A9CF50AD27C35211003DB5DA /* 채팅기본.png in Resources */,
 				A9022E3927C224F700E01F1D /* 홈3.png in Resources */,
+				A9F1441827C8A21F0071A131 /* 당근미니1.png in Resources */,
 				A9022E3A27C224F700E01F1D /* 홈4.png in Resources */,
 				A9CF509F27C2A112003DB5DA /* DongneTableViewCell.xib in Resources */,
 				A9022E4C27C2395F00E01F1D /* 홈5.png in Resources */,
 				A9FFCE8E27C5E63C00376360 /* 관심목록.png in Resources */,
 				A9022E4D27C2395F00E01F1D /* 홈6.png in Resources */,
+				A9F1441127C89EF20071A131 /* MiniCollectionViewCell.xib in Resources */,
 				A9FFCE9927C62DAB00376360 /* innie.png in Resources */,
 				A9FFCEAF27C74C7300376360 /* 중고차 직거래.png in Resources */,
 				A9FFCEBD27C7602200376360 /* 지도.png in Resources */,
@@ -436,21 +503,26 @@
 				A931C9FF27C36DFE00F100F5 /* MyPageTableViewModel.swift in Sources */,
 				A9CF50B027C352CA003DB5DA /* ChatViewController.swift in Sources */,
 				A9FFCE7C27C4E5EF00376360 /* KeywordCollectionViewCell.swift in Sources */,
+				A9F1441027C89EF20071A131 /* MiniCollectionViewCell.swift in Sources */,
 				A9022E3027C222DB00E01F1D /* HomeTableViewModel.swift in Sources */,
 				A9CF50A127C34E01003DB5DA /* ChatTableViewModel.swift in Sources */,
 				A9022E5527C29F2200E01F1D /* DongneTableViewModel.swift in Sources */,
 				A9022E1A27C1F8C400E01F1D /* AppDelegate.swift in Sources */,
+				A9F1441527C8A0A40071A131 /* MiniCollectionViewModel.swift in Sources */,
 				A931C9FC27C36D5600F100F5 /* MyPageViewController.swift in Sources */,
 				A9CF509E27C2A112003DB5DA /* DongneTableViewCell.swift in Sources */,
 				A9022E2E27C219A900E01F1D /* Setting.swift in Sources */,
 				A9CF50B527C357D2003DB5DA /* ChatTableViewCell.swift in Sources */,
+				A9FFCED227C79F6000376360 /* FirstStoreViewController.swift in Sources */,
 				A9FFCEC427C7710900376360 /* SecondFoodViewController.swift in Sources */,
 				A9FFCE9327C6189600376360 /* AddItemViewController.swift in Sources */,
 				A9FFCEA027C73EBB00376360 /* MapCollectionViewCell.swift in Sources */,
 				A9FFCEC627C7776000376360 /* TabManViewController.swift in Sources */,
 				A9022E1C27C1F8C400E01F1D /* SceneDelegate.swift in Sources */,
+				A9FFCED427C7A52600376360 /* SecondStoreViewController.swift in Sources */,
 				A9FFCE7827C4E3D400376360 /* KeywordTableViewCell.swift in Sources */,
 				A9FFCE7327C4BE9B00376360 /* MapViewController.swift in Sources */,
+				A9FFCED027C79B4F00376360 /* TabManStoreViewController.swift in Sources */,
 				A9022E5727C29FB000E01F1D /* DongneViewController.swift in Sources */,
 				A9FFCEC227C770FF00376360 /* FirstFoodViewController.swift in Sources */,
 			);
@@ -629,6 +701,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJTCXWCX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DaangnMarket_clone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

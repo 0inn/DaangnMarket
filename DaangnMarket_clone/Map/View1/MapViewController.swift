@@ -13,10 +13,11 @@ class MapViewController: TabmanViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var collectionView2: UICollectionView!
+    
     let maps = ["심부름", "일자리", "친구", "모닝", "부업", "월세방", "캠핑카", "과외", "월세", "용달차"]
-
-
-    // tab bar library - TabMan 사용
+    
+    var collectionViewModel = MiniCollectionViewModel()
     
     private var viewControllers: [UIViewController] = []
     
@@ -25,6 +26,9 @@ class MapViewController: TabmanViewController {
         setupLeftItem()
         setupRightItems()
         setupCollectionView()
+        setupCollectionView2()
+        collectionView.tag = 1
+        collectionView2.tag = 2
     }
 
     // MARK: 네비게이션 바 설정
@@ -58,16 +62,24 @@ class MapViewController: TabmanViewController {
         collectionView.register(UINib(nibName: "HeaderCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: HeaderCollectionViewCell.identifier)
         collectionView.register(UINib(nibName: "MapCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: MapCollectionViewCell.identifier)
     }
+    
+    private func setupCollectionView2() {
+        collectionView2.delegate = self
+        collectionView2.dataSource = self
+        collectionView2.register(UINib(nibName: "MiniCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: MiniCollectionViewCell.identifier)
+    }
 }
 
-// MARK: 첫번째 뷰 - 2 : CollectionView
 extension MapViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return maps.count
+        if collectionView.tag == 1 { return maps.count }
+        else { return collectionViewModel.count
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView.tag == 1 {
         if(indexPath.row == 0) {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeaderCollectionViewCell.identifier, for: indexPath) as! HeaderCollectionViewCell
 
@@ -78,10 +90,21 @@ extension MapViewController: UICollectionViewDelegate, UICollectionViewDataSourc
             cell.mapBtn.setTitle(maps[indexPath.row], for: .normal)
             return cell
         }
+        }
+        else {
+            let cell = collectionView2.dequeueReusableCell(withReuseIdentifier: MiniCollectionViewCell.identifier, for: indexPath) as! MiniCollectionViewCell
+            let cellData = collectionViewModel.itemAt(indexPath.row)
+            cell.setData(cellData)
+            return cell
+        }
     }
 
     // 이 함수로 cell의 width와 height를 줘야 오류가 안남
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView.tag == 1 {
         return CGSize(width: 10, height: 10)
+        } else {
+            return CGSize(width: 120, height: 180)
+        }
     }
 }
